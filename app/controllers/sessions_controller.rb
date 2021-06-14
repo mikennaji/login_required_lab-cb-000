@@ -8,6 +8,11 @@ def create
   end
 end
 
+def destroy
+  session.delete :name
+  logged_in
 
+
+end
 
 end
