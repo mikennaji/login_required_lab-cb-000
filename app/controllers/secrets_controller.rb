@@ -5,7 +5,7 @@ class SecretsController < ApplicationController
   return head(:forbidden) unless session.include? :user_name
  end
 
- def show 
-   
+ def show
+
    
 end
