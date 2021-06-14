@@ -10,7 +10,7 @@ end
 
 def destroy
   session.delete :name
-  logged_in
+  logged_in?
 
 
 end
