@@ -1,11 +1,10 @@
 class SessionsController < ApplicationController
 
 def create
-  if !current_user
-    session[:name] = [:name]
-  else
-    logged_in?
-  end
+  session[:name] = params[:name]
+  logged_in? and return
+  redirect_to '/'
+
 end
 
 def destroy
