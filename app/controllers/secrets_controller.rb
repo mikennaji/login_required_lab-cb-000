@@ -6,7 +6,7 @@ class SecretsController < ApplicationController
  end
 
  def show
-  logged_in
+  
 end
 
 
