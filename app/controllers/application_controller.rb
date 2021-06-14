@@ -8,8 +8,8 @@ class ApplicationController < ActionController::Base
   end
 
   def logged_in?
-  redirect_to 'new' unless current_user
- end
+  redirect_to '/sessions/new' unless current_user
+  end
 
   
 end
