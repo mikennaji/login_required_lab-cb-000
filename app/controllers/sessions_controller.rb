@@ -1,13 +1,13 @@
 class SessionsController < ApplicationController
 
-def create 
+def create
   if !current_user
     session[:name] = [:name]
-  else 
+  else
     logged_in?
   end
 end
 
-    
-  
+
+
 end
