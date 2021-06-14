@@ -1,9 +1,13 @@
 class SessionsController < ApplicationController
 
-  before_action :require_login
+def create 
+  if !current_user
+    session[:name] = [:name]
+  else 
+    logged_in?
+  end
+end
 
- def require_login
-   return head(:forbidden) unless session.include? :user_id
- end
- 
+    
+  
 end
