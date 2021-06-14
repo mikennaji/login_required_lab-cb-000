@@ -6,5 +6,10 @@ class ApplicationController < ActionController::Base
   def current_user
     session[:name] unless session[:name].blank?
   end
+
+  def logged_in?
+  redirect_to 'new' unless current_user
+ end
+
   
 end
